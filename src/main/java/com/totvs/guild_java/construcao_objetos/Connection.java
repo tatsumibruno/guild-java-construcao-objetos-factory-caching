@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 public class Connection {
 
-    private static final List<Connection> POOL = new ArrayList<>();
+    private static final List<Connection> POOL = new ArrayList<>(10);
 
     private final Consumer<Connection> onRelease;
 
